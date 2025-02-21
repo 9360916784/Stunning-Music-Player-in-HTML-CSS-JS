@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="player">
+        <div class="image-container">
+            <img id="song-image" src="images/song1.jpg" alt="Song Image">
+        </div>
+        <h2 id="song-title">Song 1</h2>
+
+        <div class="progress-container">
+            <span id="current-time">0:00</span>
+            <input type="range" id="progress-bar" min="0" value="0">
+            <span id="total-duration">0:00</span>
+        </div>
+
+        <audio id="audio" src="songs/song1.mp3"></audio>
+
+        <div class="controls">
+            <button id="prev"><i class="fas fa-backward">⏮</i></button>
+            <button id="play"><i class="fas fa-play">▶</i></button>
+            <button id="next"><i class="fas fa-forward">⏭</i></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
